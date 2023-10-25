@@ -1,0 +1,106 @@
+#cabecalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+#principal {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  height: calc(100vh - 37px);
+  margin-top: -4rem;
+}
+
+.principal__secao {
+  border: 1px solid #AB2223;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.principal__secao:hover {
+  transform: scale3d(1.1, 1.1, 1);
+  box-shadow: 2px 3px 114px -33px rgba(0, 0, 0, 0.87);
+}
+
+.pikachu {
+  border: 1px solid yellow;
+}
+
+.bulbasaur {
+  border: 1px solid green;
+}
+
+.squirtle {
+  border: 1px solid blue;
+}
+
+.secao__titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 2rem;
+}
+
+.secao__titulo p {
+  font-size: 26px;
+}
+
+.secao__imagem img {
+  width: 310px;
+}
+
+.secao__botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.secao__botao button {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid #AB2223;
+}
+.secao__botao button:hover {
+  background-color: #AB2223;
+  color: white;
+}
+
+.verMais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.verMais .verMaisPokemon {
+  display: block;
+  margin-top: -12rem;
+  padding: 1rem;
+  border-radius: 20px;
+  border-color: #000;
+}
+.verMais .verMaisPokemon:hover {
+  transform: scale(1.2);
+  background-color: #AB2223;
+  color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+}
+
+button {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

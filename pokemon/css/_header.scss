@@ -1,0 +1,11 @@
+@mixin flexCenter($display, $justify_content, $align_items, $flex_direction){
+    display: $display;
+    justify-content: $justify_content;
+    align-items: $align_items;
+    flex-direction: $flex_direction;
+} 
+
+#cabecalho{
+    @include flexCenter(flex, center, center, row);
+    margin-top: 2rem;
+}

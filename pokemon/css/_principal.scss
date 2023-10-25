@@ -1,0 +1,84 @@
+@mixin flexCenter($display, $justify_content, $align_items){
+    display: $display;
+    justify-content: $justify_content;
+    align-items: $align_items;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#principal{
+    @include flexCenter(flex, space-evenly, center);
+    height: calc(100vh - 37px);
+    margin-top: -4rem;
+}
+
+.principal__secao{
+    border: $borda;
+    padding: 1rem;
+    border-radius: 20px;
+
+    &:hover{
+        transform: scale3d(1.1, 1.1, 1);
+        box-shadow: $box_shadow;
+    }
+}
+
+.pikachu{
+    border: $bordaPikachu;
+}
+
+.bulbasaur{
+    border: $bordaBulbasaur;
+}
+
+.squirtle{
+    border: $bordaSquirtle;
+}
+
+.secao__titulo{
+    @include flexCenter(flex, center, center);
+    margin-bottom: 2rem;
+}
+
+.secao__titulo p {
+    font-size: 26px;
+}
+
+.secao__imagem img{
+    width: 310px;
+}
+
+.secao__botao{
+    @include flexCenter(flex, center, center);
+}
+
+.secao__botao button{
+    width: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+
+    border: 1px solid $corDaBorda;
+
+    &:hover{
+        background-color: $hoverBotao;
+        color: $hoverBotaoCor;
+    }
+}
+
+.verMais{
+    @include flexCenter(flex, center, center);
+}
+
+.verMais .verMaisPokemon{
+    display: block;
+    margin-top: -12rem;
+    padding: 1rem;
+    border-radius: 20px;
+    border-color: #000;
+
+    &:hover{
+        transform: scale(1.2);
+        background-color: $hoverBotao;
+        color: $hoverBotaoCor;
+    }
+}

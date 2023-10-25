@@ -1,0 +1,13 @@
+@import './variaveis';
+@import './header';
+@import './principal';
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+button{
+    cursor: pointer;
+}
